@@ -8,23 +8,27 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <section class="section-center">
-        <h1>Grocery List Project</h1>
         <form class="grocery-form">
-            <p class="alert"></p>
+            <p class="form-status-text"></p>
+            <h1>Grocery List Project</h1>
             <div class="form-control">
                 <input type="text" name="grocery-ctrl" id="grocery-ctrl">
-                <button type="submit" class="add-item-btn">Add</button>
+                <button type="submit" class="btn add-item-btn">
+                    <i class="fa fa-plus"></i>&nbsp;&nbsp; Add Item
+                </button>
             </div>
         </form>
 
         <div class="grocery-container">
-            <button type="button" class="clear-items"></button>
+            <button type="button" class="btn clear-items-btn">
+                <i class="fa fa-trash"></i> &nbsp;&nbsp; Clear Items
+            </button>
         </div>
     </section>
     

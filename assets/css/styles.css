@@ -14,23 +14,88 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+button{
+    cursor: pointer;
 }
 
 .section-center{
     width: 70%;
-    max-width: 768px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 2px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
     background-color: #fff;
     border-radius: 5px;
+    padding: 20px 0;
 }
 
 .grocery-form{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    align-items: center;
+}
+
+.grocery-form h1{
+    margin-top: 0;
+}
+
+.form-control{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-control input{
+    width: calc(100% - 120px);
+    min-width: 200px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    padding: 9px 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.form-control input:hover, 
+.form-control input:focus{
+    border-color: #bcc6d1;
+}
+
+.btn{
+    background-color: #39536e;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #1a2633;
+    padding: 10px 16px;
+}
+
+.add-item-btn{
+    width: 120px;
+    position: relative;
+    left: -2px;
+    border-radius: 0 4px 4px 0;
+}
+
+.grocery-container{
+    margin-top: 20px;
+}
+
+.btn.clear-items-btn{
+    background-color: red;
+    border-color: rgb(201, 7, 7);
+}
+
+.form-status-text{
+    display: none;
 }
 
