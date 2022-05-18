@@ -35,6 +35,10 @@ button{
     padding: 20px 0;
 }
 
+.section-main-wrapper{
+    min-width: 70%;
+}
+
 .grocery-form{
     display: flex;
     flex-direction: column;
@@ -58,7 +62,7 @@ button{
     border: 2px solid transparent;
     outline: none;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #e6f1fd;
     padding: 9px 5px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -75,8 +79,13 @@ button{
     color: #fff;
     border-radius: 4px;
     outline: none;
-    border: 1px solid #1a2633;
+    border: 1px solid #456485;
     padding: 10px 16px;
+}
+
+.btn:hover{
+    background-color: #4b6a8b;
+    border-color: #52759b;
 }
 
 .add-item-btn{
@@ -86,11 +95,58 @@ button{
     border-radius: 0 4px 4px 0;
 }
 
-.grocery-container{
+.grocery-list-container{
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
+
+}
+
+.grocery-list-wrapper{
+    width: 100%;
+}
+
+.grocery-list-wrapper .grocery-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-btn-container{
+    display: flex;
+}
+
+.grocery-item .item-title{
+    margin: 0;
+}
+
+.item-btn-container .btn{
+    padding: 5px;
+    margin-left: 7px;
+}
+
+.item-btn-container .btn.edit-item-btn{
+    background-color: #1578df;
+    border-color: #136dcc;
+}
+
+.item-btn-container .btn.edit-item-btn:hover{
+    background-color: #378ae4;
+    border-color: #307aca;
+}
+
+.item-btn-container .btn.delete-item-btn{
+    background-color: red;
+    border-color: rgb(201, 7, 7);
+}
+
+.item-btn-container .btn.delete-item-btn:hover{
+    background-color: rgb(221, 7, 7);
+    border-color: rgb(180, 6, 6);
 }
 
 .btn.clear-items-btn{
+    margin-top: 20px;
+    align-self: center;
     background-color: red;
     border-color: rgb(201, 7, 7);
 }

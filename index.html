@@ -14,22 +14,38 @@
 </head>
 <body>
     <section class="section-center">
-        <form class="grocery-form">
-            <p class="form-status-text"></p>
-            <h1>Grocery List Project</h1>
-            <div class="form-control">
-                <input type="text" name="grocery-ctrl" id="grocery-ctrl">
-                <button type="submit" class="btn add-item-btn">
-                    <i class="fa fa-plus"></i>&nbsp;&nbsp; Add Item
+        <div class="section-main-wrapper">
+            <form class="grocery-form">
+                <p class="form-status-text"></p>
+                <h1>Grocery List Project</h1>
+                <div class="form-control">
+                    <input type="text" name="grocery-ctrl" id="grocery-ctrl" placeholder="e.g. Eggs">
+                    <button type="submit" class="btn add-item-btn">
+                        <i class="fa fa-plus"></i>&nbsp;&nbsp; Add Item
+                    </button>
+                </div>
+            </form>
+            
+            <div class="grocery-list-container">
+                <div class="grocery-list-wrapper">
+                    <article class="grocery-item">
+                        <p class="item-title">item</p>
+                        <div class="item-btn-container">
+                            <button type="button" class="btn edit-item-btn">
+                                <i class="fa fa-edit"></i>
+                            </button>
+                            <button type="button" class="btn delete-item-btn">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <button type="button" class="btn clear-items-btn">
+                    <i class="fa fa-trash"></i> &nbsp;&nbsp; Clear Items
                 </button>
             </div>
-        </form>
-
-        <div class="grocery-container">
-            <button type="button" class="btn clear-items-btn">
-                <i class="fa fa-trash"></i> &nbsp;&nbsp; Clear Items
-            </button>
         </div>
+
     </section>
     
     <script src="assets/js/app.js"></script>
